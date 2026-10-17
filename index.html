@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Nebraska News — Coming Soon</title>
+  <meta name="description" content="My Nebraska News is coming soon. Something's brewing in the Cornhusker State.">
+  <style>
+    :root {
+      --bg: #faf6ee;
+      --text: #1f1b16;
+      --muted: #6b6258;
+      --accent: #d7262e;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #161310;
+        --text: #f3ede3;
+        --muted: #a79d8f;
+        --accent: #ff5a5f;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #161310;
+      --text: #f3ede3;
+      --muted: #a79d8f;
+      --accent: #ff5a5f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 36rem;
+    }
+
+    .eyebrow {
+      margin: 0 0 1rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0 0 1.25rem;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      line-height: 1.1;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .tagline {
+      margin: 0 0 2rem;
+      font-size: clamp(1.05rem, 2.5vw, 1.25rem);
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    .rule {
+      width: 3rem;
+      height: 4px;
+      margin: 0 auto 2rem;
+      border-radius: 2px;
+      background: var(--accent);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <p class="eyebrow">Coming soon</p>
+    <h1>Something's brewing in the Cornhusker State.</h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="tagline">My Nebraska News is on its way: today's news for today's Nebraska.</p>
+    <footer>mynebraska.news</footer>
+  </main>
+</body>
+
+</html>
